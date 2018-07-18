@@ -5,12 +5,10 @@
 - [x] stroke
 - [x] stroke-opacity
 - [x] stroke-opacity on hover
-- [ ] stroke-width
-- [ ] stroke-dasharray
-- [ ] stroke-dashoffset
+- [x] stroke-width
+- [x] stroke-dasharray
 - [x] stroke-linecap
 - [x] stroke-linejoin
-- [ ] stroke-miterlimit
 - [x] fill
 - [x] fill on hover
 - [x] fill-opacity
@@ -118,6 +116,32 @@
 */
 
 .stroke-none { stroke: none; }
+
+
+/*
+  description: stroke width, using unitless values
+  property: stroke-width
+*/
+
+.stroke-w--1 { stroke-width: 1; }
+.stroke-w--2 { stroke-width: 2; }
+.stroke-w--3 { stroke-width: 3; }
+.stroke-w--4 { stroke-width: 4; }
+.stroke-w--5 { stroke-width: 5; }
+.stroke-w--6 { stroke-width: 6; }
+
+
+/*
+  description: stroke dasharray, using unitless values
+  property: stroke-dasharray
+*/
+
+.stroke-dash--1 { stroke-dasharray: 1; }
+.stroke-dash--2 { stroke-dasharray: 2; }
+.stroke-dash--3 { stroke-dasharray: 3; }
+.stroke-dash--4 { stroke-dasharray: 4; }
+.stroke-dash--5 { stroke-dasharray: 5; }
+.stroke-dash--6 { stroke-dasharray: 6; }
 
 
 /*
