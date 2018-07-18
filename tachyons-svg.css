@@ -1,31 +1,4 @@
 /*
-
-## included svg css classes
-
-- [x] stroke
-- [x] stroke-opacity
-- [x] stroke-opacity on hover
-- [x] stroke-width
-- [x] stroke-dasharray
-- [x] stroke-linecap
-- [x] stroke-linejoin
-- [x] fill
-- [x] fill on hover
-- [x] fill-opacity
-- [x] fill-opacity on hover
-- [x] shape-rendering
-
-## todo
-
-- [ ] add a description for each section.
-- [ ] add the css property/properties for each section.
-- [ ] add the supported values (if applicable) for each section.
-- [ ] decide on the syntax for stroke-linejoin, stroke-linecap.
-
-*/
-
-
-/*
   property: stroke
   supported values: <hex> | <rgba>
 */
