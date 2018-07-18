@@ -22,6 +22,7 @@
 - [ ] add a description for each section.
 - [ ] add the css property/properties for each section.
 - [ ] add the supported values (if applicable) for each section.
+- [ ] decide on the syntax for stroke-linejoin, stroke-linecap.
 
 */
 
@@ -130,15 +131,15 @@
 .stroke-linejoin-miter { stroke-linejoin: miter; }
 .stroke-linejoin-round { stroke-linejoin: round; }
 
-    /* alt syntax */
-    .stroke-lj-bevel { stroke-linejoin: bevel; }
-    .stroke-lj-miter { stroke-linejoin: miter; }
-    .stroke-lj-round { stroke-linejoin: round; }
+/* alt syntax */
+.stroke-lj-bevel { stroke-linejoin: bevel; }
+.stroke-lj-miter { stroke-linejoin: miter; }
+.stroke-lj-round { stroke-linejoin: round; }
 
-    /* alt syntax */
-    .stroke-join-bevel { stroke-linejoin: bevel; }
-    .stroke-join-miter { stroke-linejoin: miter; }
-    .stroke-join-round { stroke-linejoin: round; }
+/* alt syntax */
+.stroke-join-bevel { stroke-linejoin: bevel; }
+.stroke-join-miter { stroke-linejoin: miter; }
+.stroke-join-round { stroke-linejoin: round; }
 
 
 /*
@@ -152,186 +153,186 @@
 .stroke-linecap-round { stroke-linecap: round; }
 .stroke-linecap-square { stroke-linecap: square; }
 
-    /* alt syntax */
-    .stroke-lc-butt { stroke-linecap: butt; }
-    .stroke-lc-round { stroke-linecap: round; }
-    .stroke-lc-square { stroke-linecap: square; }
+/* alt syntax */
+.stroke-lc-butt { stroke-linecap: butt; }
+.stroke-lc-round { stroke-linecap: round; }
+.stroke-lc-square { stroke-linecap: square; }
 
-    /* alt syntax */
-    .stroke-cap-butt { stroke-linecap: butt; }
-    .stroke-cap-round { stroke-linecap: round; }
-    .stroke-cap-square { stroke-linecap: square; }
-    
-
-    /*
-      description: fill color
-      property: fill
-      supported values: <hex> | <rgba>
-    */
-
-    .fill-black { fill: #000; }
-    .fill-near-black { fill: #111; }
-    .fill-dark-gray { fill: #333; }
-    .fill-mid-gray { fill: #555; }
-    .fill-gray { fill: #777; }
-    .fill-silver { fill: #999; }
-    .fill-light-silver { fill: #aaa; }
-    .fill-light-gray { fill: #eee; }
-    .fill-near-white { fill: #f4f4f4; }
-    .fill-white { fill: #fff; }
-    .fill-white-90 { fill: rgba( 255, 255, 255, .9 ); }
-    .fill-white-80 { fill: rgba( 255, 255, 255, .8 ); }
-    .fill-white-70 { fill: rgba( 255, 255, 255, .7 ); }
-    .fill-white-60 { fill: rgba( 255, 255, 255, .6 ); }
-    .fill-white-50 { fill: rgba( 255, 255, 255, .5 ); }
-    .fill-white-40 { fill: rgba( 255, 255, 255, .4 ); }
-    .fill-white-30 { fill: rgba( 255, 255, 255, .3 ); }
-    .fill-white-20 { fill: rgba( 255, 255, 255, .2 ); }
-    .fill-white-10 { fill: rgba( 255, 255, 255, .1 ); }
-    .fill-white-05 { fill: rgba( 255, 255, 255, .05 ); }
-    .fill-white-025 { fill: rgba( 255, 255, 255, .025 ); }
-    .fill-white-0125 { fill: rgba( 255, 255, 255, .0125 ); }
-    .fill-black-90 { fill: rgba( 0, 0, 0, .9 ); }
-    .fill-black-80 { fill: rgba( 0, 0, 0, .8 ); }
-    .fill-black-70 { fill: rgba( 0, 0, 0, .7 ); }
-    .fill-black-60 { fill: rgba( 0, 0, 0, .6 ); }
-    .fill-black-50 { fill: rgba( 0, 0, 0, .5 ); }
-    .fill-black-40 { fill: rgba( 0, 0, 0, .4 ); }
-    .fill-black-30 { fill: rgba( 0, 0, 0, .3 ); }
-    .fill-black-20 { fill: rgba( 0, 0, 0, .2 ); }
-    .fill-black-10 { fill: rgba( 0, 0, 0, .1 ); }
-    .fill-black-05 { fill: rgba( 0, 0, 0, .05 ); }
-    .fill-black-025 { fill: rgba( 0, 0, 0, .025 ); }
-    .fill-black-0125 { fill: rgba( 0, 0, 0, .0125 ); }
-    .fill-dark-red { fill: #e7040f; }
-    .fill-red { fill: #ff4136; }
-    .fill-light-red { fill: #ff725c; }
-    .fill-orange { fill: #ff6300; }
-    .fill-gold { fill: #ffb700; }
-    .fill-yellow { fill: #ffd700; }
-    .fill-light-yellow { fill: #fbf1a9; }
-    .fill-purple { fill: #5e2ca5; }
-    .fill-light-purple { fill: #a463f2; }
-    .fill-dark-pink { fill: #d5008f; }
-    .fill-hot-pink { fill: #ff41b4; }
-    .fill-pink { fill: #ff80cc; }
-    .fill-light-pink { fill: #ffa3d7; }
-    .fill-dark-green { fill: #137752; }
-    .fill-green { fill: #19a974; }
-    .fill-light-green { fill: #9eebcf; }
-    .fill-navy { fill: #001b44; }
-    .fill-dark-blue { fill: #00449e; }
-    .fill-blue { fill: #357edd; }
-    .fill-light-blue { fill: #96ccff; }
-    .fill-lightest-blue { fill: #cdecff; }
-    .fill-washed-blue { fill: #f6fffe; }
-    .fill-washed-green { fill: #e8fdf5; }
-    .fill-washed-yellow { fill: #fffceb; }
-    .fill-washed-red { fill: #ffdfdf; }
-    .fill-transparent { fill: transparent; }
-
-    /*
-      description: fill color, on hover
-      property: fill:hover
-      supported values: <hex> | <rgba>
-    */
-
-    .hover-fill-black:hover { fill: #000; }
-    .hover-fill-near-black:hover { fill: #111; }
-    .hover-fill-dark-gray:hover { fill: #333; }
-    .hover-fill-mid-gray:hover { fill: #555; }
-    .hover-fill-gray:hover { fill: #777; }
-    .hover-fill-silver:hover { fill: #999; }
-    .hover-fill-light-silver:hover { fill: #aaa; }
-    .hover-fill-light-gray:hover { fill: #eee; }
-    .hover-fill-near-white:hover { fill: #f4f4f4; }
-    .hover-fill-white:hover { fill: #fff; }
-    .hover-fill-white-90:hover { fill: rgba( 255, 255, 255, .9 ); }
-    .hover-fill-white-80:hover { fill: rgba( 255, 255, 255, .8 ); }
-    .hover-fill-white-70:hover { fill: rgba( 255, 255, 255, .7 ); }
-    .hover-fill-white-60:hover { fill: rgba( 255, 255, 255, .6 ); }
-    .hover-fill-white-50:hover { fill: rgba( 255, 255, 255, .5 ); }
-    .hover-fill-white-40:hover { fill: rgba( 255, 255, 255, .4 ); }
-    .hover-fill-white-30:hover { fill: rgba( 255, 255, 255, .3 ); }
-    .hover-fill-white-20:hover { fill: rgba( 255, 255, 255, .2 ); }
-    .hover-fill-white-10:hover { fill: rgba( 255, 255, 255, .1 ); }
-    .hover-fill-white-05:hover { fill: rgba( 255, 255, 255, .05 ); }
-    .hover-fill-white-025:hover { fill: rgba( 255, 255, 255, .025 ); }
-    .hover-fill-white-0125:hover { fill: rgba( 255, 255, 255, .0125 ); }
-    .hover-fill-black-90:hover { fill: rgba( 0, 0, 0, .9 ); }
-    .hover-fill-black-80:hover { fill: rgba( 0, 0, 0, .8 ); }
-    .hover-fill-black-70:hover { fill: rgba( 0, 0, 0, .7 ); }
-    .hover-fill-black-60:hover { fill: rgba( 0, 0, 0, .6 ); }
-    .hover-fill-black-50:hover { fill: rgba( 0, 0, 0, .5 ); }
-    .hover-fill-black-40:hover { fill: rgba( 0, 0, 0, .4 ); }
-    .hover-fill-black-30:hover { fill: rgba( 0, 0, 0, .3 ); }
-    .hover-fill-black-20:hover { fill: rgba( 0, 0, 0, .2 ); }
-    .hover-fill-black-10:hover { fill: rgba( 0, 0, 0, .1 ); }
-    .hover-fill-black-05:hover { fill: rgba( 0, 0, 0, .05 ); }
-    .hover-fill-black-025:hover { fill: rgba( 0, 0, 0, .025 ); }
-    .hover-fill-black-0125:hover { fill: rgba( 0, 0, 0, .0125 ); }
-    .hover-fill-dark-red:hover { fill: #e7040f; }
-    .hover-fill-red:hover { fill: #ff4136; }
-    .hover-fill-light-red:hover { fill: #ff725c; }
-    .hover-fill-orange:hover { fill: #ff6300; }
-    .hover-fill-gold:hover { fill: #ffb700; }
-    .hover-fill-yellow:hover { fill: #ffd700; }
-    .hover-fill-light-yellow:hover { fill: #fbf1a9; }
-    .hover-fill-purple:hover { fill: #5e2ca5; }
-    .hover-fill-light-purple:hover { fill: #a463f2; }
-    .hover-fill-dark-pink:hover { fill: #d5008f; }
-    .hover-fill-hot-pink:hover { fill: #ff41b4; }
-    .hover-fill-pink:hover { fill: #ff80cc; }
-    .hover-fill-light-pink:hover { fill: #ffa3d7; }
-    .hover-fill-dark-green:hover { fill: #137752; }
-    .hover-fill-green:hover { fill: #19a974; }
-    .hover-fill-light-green:hover { fill: #9eebcf; }
-    .hover-fill-navy:hover { fill: #001b44; }
-    .hover-fill-dark-blue:hover { fill: #00449e; }
-    .hover-fill-blue:hover { fill: #357edd; }
-    .hover-fill-light-blue:hover { fill: #96ccff; }
-    .hover-fill-lightest-blue:hover { fill: #cdecff; }
-    .hover-fill-washed-blue:hover { fill: #f6fffe; }
-    .hover-fill-washed-green:hover { fill: #e8fdf5; }
-    .hover-fill-washed-yellow:hover { fill: #fffceb; }
-    .hover-fill-washed-red:hover { fill: #ffdfdf; }
-    .hover-fill-transparent:hover { fill: transparent; }
+/* alt syntax */
+.stroke-cap-butt { stroke-linecap: butt; }
+.stroke-cap-round { stroke-linecap: round; }
+.stroke-cap-square { stroke-linecap: square; }
 
 
-    /*
-      description: fill opacity
-      property: fill-opacity
-    */
+/*
+  description: fill color
+  property: fill
+  supported values: <hex> | <rgba>
+*/
 
-    .fill-o-05 { fill-opacity: .05; }
-    .fill-o-10 { fill-opacity: .10; }
-    .fill-o-20 { fill-opacity: .20; }
-    .fill-o-25 { fill-opacity: .25; }
-    .fill-o-30 { fill-opacity: .30; }
-    .fill-o-40 { fill-opacity: .40; }
-    .fill-o-50 { fill-opacity: .50; }
-    .fill-o-60 { fill-opacity: .60; }
-    .fill-o-75 { fill-opacity: .75; }
-    .fill-o-80 { fill-opacity: .80; }
-    .fill-o-90 { fill-opacity: .90; }
+.fill-black { fill: #000; }
+.fill-near-black { fill: #111; }
+.fill-dark-gray { fill: #333; }
+.fill-mid-gray { fill: #555; }
+.fill-gray { fill: #777; }
+.fill-silver { fill: #999; }
+.fill-light-silver { fill: #aaa; }
+.fill-light-gray { fill: #eee; }
+.fill-near-white { fill: #f4f4f4; }
+.fill-white { fill: #fff; }
+.fill-white-90 { fill: rgba( 255, 255, 255, .9 ); }
+.fill-white-80 { fill: rgba( 255, 255, 255, .8 ); }
+.fill-white-70 { fill: rgba( 255, 255, 255, .7 ); }
+.fill-white-60 { fill: rgba( 255, 255, 255, .6 ); }
+.fill-white-50 { fill: rgba( 255, 255, 255, .5 ); }
+.fill-white-40 { fill: rgba( 255, 255, 255, .4 ); }
+.fill-white-30 { fill: rgba( 255, 255, 255, .3 ); }
+.fill-white-20 { fill: rgba( 255, 255, 255, .2 ); }
+.fill-white-10 { fill: rgba( 255, 255, 255, .1 ); }
+.fill-white-05 { fill: rgba( 255, 255, 255, .05 ); }
+.fill-white-025 { fill: rgba( 255, 255, 255, .025 ); }
+.fill-white-0125 { fill: rgba( 255, 255, 255, .0125 ); }
+.fill-black-90 { fill: rgba( 0, 0, 0, .9 ); }
+.fill-black-80 { fill: rgba( 0, 0, 0, .8 ); }
+.fill-black-70 { fill: rgba( 0, 0, 0, .7 ); }
+.fill-black-60 { fill: rgba( 0, 0, 0, .6 ); }
+.fill-black-50 { fill: rgba( 0, 0, 0, .5 ); }
+.fill-black-40 { fill: rgba( 0, 0, 0, .4 ); }
+.fill-black-30 { fill: rgba( 0, 0, 0, .3 ); }
+.fill-black-20 { fill: rgba( 0, 0, 0, .2 ); }
+.fill-black-10 { fill: rgba( 0, 0, 0, .1 ); }
+.fill-black-05 { fill: rgba( 0, 0, 0, .05 ); }
+.fill-black-025 { fill: rgba( 0, 0, 0, .025 ); }
+.fill-black-0125 { fill: rgba( 0, 0, 0, .0125 ); }
+.fill-dark-red { fill: #e7040f; }
+.fill-red { fill: #ff4136; }
+.fill-light-red { fill: #ff725c; }
+.fill-orange { fill: #ff6300; }
+.fill-gold { fill: #ffb700; }
+.fill-yellow { fill: #ffd700; }
+.fill-light-yellow { fill: #fbf1a9; }
+.fill-purple { fill: #5e2ca5; }
+.fill-light-purple { fill: #a463f2; }
+.fill-dark-pink { fill: #d5008f; }
+.fill-hot-pink { fill: #ff41b4; }
+.fill-pink { fill: #ff80cc; }
+.fill-light-pink { fill: #ffa3d7; }
+.fill-dark-green { fill: #137752; }
+.fill-green { fill: #19a974; }
+.fill-light-green { fill: #9eebcf; }
+.fill-navy { fill: #001b44; }
+.fill-dark-blue { fill: #00449e; }
+.fill-blue { fill: #357edd; }
+.fill-light-blue { fill: #96ccff; }
+.fill-lightest-blue { fill: #cdecff; }
+.fill-washed-blue { fill: #f6fffe; }
+.fill-washed-green { fill: #e8fdf5; }
+.fill-washed-yellow { fill: #fffceb; }
+.fill-washed-red { fill: #ffdfdf; }
+.fill-transparent { fill: transparent; }
+
+/*
+  description: fill color, on hover
+  property: fill:hover
+  supported values: <hex> | <rgba>
+*/
+
+.hover-fill-black:hover { fill: #000; }
+.hover-fill-near-black:hover { fill: #111; }
+.hover-fill-dark-gray:hover { fill: #333; }
+.hover-fill-mid-gray:hover { fill: #555; }
+.hover-fill-gray:hover { fill: #777; }
+.hover-fill-silver:hover { fill: #999; }
+.hover-fill-light-silver:hover { fill: #aaa; }
+.hover-fill-light-gray:hover { fill: #eee; }
+.hover-fill-near-white:hover { fill: #f4f4f4; }
+.hover-fill-white:hover { fill: #fff; }
+.hover-fill-white-90:hover { fill: rgba( 255, 255, 255, .9 ); }
+.hover-fill-white-80:hover { fill: rgba( 255, 255, 255, .8 ); }
+.hover-fill-white-70:hover { fill: rgba( 255, 255, 255, .7 ); }
+.hover-fill-white-60:hover { fill: rgba( 255, 255, 255, .6 ); }
+.hover-fill-white-50:hover { fill: rgba( 255, 255, 255, .5 ); }
+.hover-fill-white-40:hover { fill: rgba( 255, 255, 255, .4 ); }
+.hover-fill-white-30:hover { fill: rgba( 255, 255, 255, .3 ); }
+.hover-fill-white-20:hover { fill: rgba( 255, 255, 255, .2 ); }
+.hover-fill-white-10:hover { fill: rgba( 255, 255, 255, .1 ); }
+.hover-fill-white-05:hover { fill: rgba( 255, 255, 255, .05 ); }
+.hover-fill-white-025:hover { fill: rgba( 255, 255, 255, .025 ); }
+.hover-fill-white-0125:hover { fill: rgba( 255, 255, 255, .0125 ); }
+.hover-fill-black-90:hover { fill: rgba( 0, 0, 0, .9 ); }
+.hover-fill-black-80:hover { fill: rgba( 0, 0, 0, .8 ); }
+.hover-fill-black-70:hover { fill: rgba( 0, 0, 0, .7 ); }
+.hover-fill-black-60:hover { fill: rgba( 0, 0, 0, .6 ); }
+.hover-fill-black-50:hover { fill: rgba( 0, 0, 0, .5 ); }
+.hover-fill-black-40:hover { fill: rgba( 0, 0, 0, .4 ); }
+.hover-fill-black-30:hover { fill: rgba( 0, 0, 0, .3 ); }
+.hover-fill-black-20:hover { fill: rgba( 0, 0, 0, .2 ); }
+.hover-fill-black-10:hover { fill: rgba( 0, 0, 0, .1 ); }
+.hover-fill-black-05:hover { fill: rgba( 0, 0, 0, .05 ); }
+.hover-fill-black-025:hover { fill: rgba( 0, 0, 0, .025 ); }
+.hover-fill-black-0125:hover { fill: rgba( 0, 0, 0, .0125 ); }
+.hover-fill-dark-red:hover { fill: #e7040f; }
+.hover-fill-red:hover { fill: #ff4136; }
+.hover-fill-light-red:hover { fill: #ff725c; }
+.hover-fill-orange:hover { fill: #ff6300; }
+.hover-fill-gold:hover { fill: #ffb700; }
+.hover-fill-yellow:hover { fill: #ffd700; }
+.hover-fill-light-yellow:hover { fill: #fbf1a9; }
+.hover-fill-purple:hover { fill: #5e2ca5; }
+.hover-fill-light-purple:hover { fill: #a463f2; }
+.hover-fill-dark-pink:hover { fill: #d5008f; }
+.hover-fill-hot-pink:hover { fill: #ff41b4; }
+.hover-fill-pink:hover { fill: #ff80cc; }
+.hover-fill-light-pink:hover { fill: #ffa3d7; }
+.hover-fill-dark-green:hover { fill: #137752; }
+.hover-fill-green:hover { fill: #19a974; }
+.hover-fill-light-green:hover { fill: #9eebcf; }
+.hover-fill-navy:hover { fill: #001b44; }
+.hover-fill-dark-blue:hover { fill: #00449e; }
+.hover-fill-blue:hover { fill: #357edd; }
+.hover-fill-light-blue:hover { fill: #96ccff; }
+.hover-fill-lightest-blue:hover { fill: #cdecff; }
+.hover-fill-washed-blue:hover { fill: #f6fffe; }
+.hover-fill-washed-green:hover { fill: #e8fdf5; }
+.hover-fill-washed-yellow:hover { fill: #fffceb; }
+.hover-fill-washed-red:hover { fill: #ffdfdf; }
+.hover-fill-transparent:hover { fill: transparent; }
 
 
-    /*
-      description: fill opacity, on hover
-      property: fill-opacity
-    */
+/*
+  description: fill opacity
+  property: fill-opacity
+*/
 
-    .hover-fill-o-05:hover { fill-opacity: .05; }
-    .hover-fill-o-10:hover { fill-opacity: .10; }
-    .hover-fill-o-20:hover { fill-opacity: .20; }
-    .hover-fill-o-25:hover { fill-opacity: .25; }
-    .hover-fill-o-30:hover { fill-opacity: .30; }
-    .hover-fill-o-40:hover { fill-opacity: .40; }
-    .hover-fill-o-50:hover { fill-opacity: .50; }
-    .hover-fill-o-60:hover { fill-opacity: .60; }
-    .hover-fill-o-75:hover { fill-opacity: .75; }
-    .hover-fill-o-80:hover { fill-opacity: .80; }
-    .hover-fill-o-90:hover { fill-opacity: .90; }
+.fill-o-05 { fill-opacity: .05; }
+.fill-o-10 { fill-opacity: .10; }
+.fill-o-20 { fill-opacity: .20; }
+.fill-o-25 { fill-opacity: .25; }
+.fill-o-30 { fill-opacity: .30; }
+.fill-o-40 { fill-opacity: .40; }
+.fill-o-50 { fill-opacity: .50; }
+.fill-o-60 { fill-opacity: .60; }
+.fill-o-75 { fill-opacity: .75; }
+.fill-o-80 { fill-opacity: .80; }
+.fill-o-90 { fill-opacity: .90; }
+
+
+/*
+  description: fill opacity, on hover
+  property: fill-opacity
+*/
+
+.hover-fill-o-05:hover { fill-opacity: .05; }
+.hover-fill-o-10:hover { fill-opacity: .10; }
+.hover-fill-o-20:hover { fill-opacity: .20; }
+.hover-fill-o-25:hover { fill-opacity: .25; }
+.hover-fill-o-30:hover { fill-opacity: .30; }
+.hover-fill-o-40:hover { fill-opacity: .40; }
+.hover-fill-o-50:hover { fill-opacity: .50; }
+.hover-fill-o-60:hover { fill-opacity: .60; }
+.hover-fill-o-75:hover { fill-opacity: .75; }
+.hover-fill-o-80:hover { fill-opacity: .80; }
+.hover-fill-o-90:hover { fill-opacity: .90; }
 
 
 /*
