@@ -1,0 +1,51 @@
+/*
+
+properties
+
+stroke
+stroke-dasharray
+stroke-dashoffset
+stroke-linecap
+stroke-linejoin
+stroke-miterlimit
+stroke-opacity
+
+syntax
+
+fill-{{color_value}}
+fill-{{color_value}}-o{{opacity_value}}
+fill-o{{opacity_value}}
+
+stroke-{{color_value}}
+stroke-{{color_value}}-o{{opacity_value}}
+stroke-o{{opacity_value}}
+
+*/
+
+/*
+  property: fill-opacity
+  supported values: 05-90
+*/
+
+.fill-o-05 {}
+.fill-o-10 {}
+.fill-o-20 {}
+.fill-o-05 {}
+.fill-o-05 {}
+.fill-o-05 {}
+.fill-o-05 {}
+.fill-o-05 {}
+.fill-o-05 {}
+
+
+/*
+  property: stroke-linejoin
+  supported values: arcs | bevel |miter | miter-clip | round
+*/
+
+/*
+property: stroke-linecap: butt | round | square */
+
+.stroke-linejoin-butt {}
+.stroke-linejoin-round {}
+.stroke-linejoin-square {}
