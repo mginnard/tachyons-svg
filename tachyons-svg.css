@@ -1,6 +1,6 @@
 /*
 
-properties
+## supported svg css properties
 
 stroke
 stroke-dasharray
@@ -10,42 +10,162 @@ stroke-linejoin
 stroke-miterlimit
 stroke-opacity
 
-syntax
+## supported states
 
-fill-{{color_value}}
-fill-{{color_value}}-o{{opacity_value}}
-fill-o{{opacity_value}}
-
-stroke-{{color_value}}
-stroke-{{color_value}}-o{{opacity_value}}
-stroke-o{{opacity_value}}
+default
+:hover
 
 */
+
+
+/*
+  property: fill
+  supported values: <hex> | <rgba>
+*/
+
+.fill-black { fill: #000; }
+.fill-near-black { fill: #111; }
+.fill-dark-gray { fill: #333; }
+.fill-mid-gray { fill: #555; }
+.fill-gray { fill: #777; }
+.fill-silver { fill: #999; }
+.fill-light-silver { fill: #aaa; }
+.fill-light-gray { fill: #eee; }
+.fill-near-white { fill: #f4f4f4; }
+.fill-white { fill: #fff; }
+.fill-white-90 { fill: rgba( 255, 255, 255, .9 ); }
+.fill-white-80 { fill: rgba( 255, 255, 255, .8 ); }
+.fill-white-70 { fill: rgba( 255, 255, 255, .7 ); }
+.fill-white-60 { fill: rgba( 255, 255, 255, .6 ); }
+.fill-white-50 { fill: rgba( 255, 255, 255, .5 ); }
+.fill-white-40 { fill: rgba( 255, 255, 255, .4 ); }
+.fill-white-30 { fill: rgba( 255, 255, 255, .3 ); }
+.fill-white-20 { fill: rgba( 255, 255, 255, .2 ); }
+.fill-white-10 { fill: rgba( 255, 255, 255, .1 ); }
+.fill-white-05 { fill: rgba( 255, 255, 255, .05 ); }
+.fill-white-025 { fill: rgba( 255, 255, 255, .025 ); }
+.fill-white-0125 { fill: rgba( 255, 255, 255, .0125 ); }
+.fill-black-90 { fill: rgba( 0, 0, 0, .9 ); }
+.fill-black-80 { fill: rgba( 0, 0, 0, .8 ); }
+.fill-black-70 { fill: rgba( 0, 0, 0, .7 ); }
+.fill-black-60 { fill: rgba( 0, 0, 0, .6 ); }
+.fill-black-50 { fill: rgba( 0, 0, 0, .5 ); }
+.fill-black-40 { fill: rgba( 0, 0, 0, .4 ); }
+.fill-black-30 { fill: rgba( 0, 0, 0, .3 ); }
+.fill-black-20 { fill: rgba( 0, 0, 0, .2 ); }
+.fill-black-10 { fill: rgba( 0, 0, 0, .1 ); }
+.fill-black-05 { fill: rgba( 0, 0, 0, .05 ); }
+.fill-black-025 { fill: rgba( 0, 0, 0, .025 ); }
+.fill-black-0125 { fill: rgba( 0, 0, 0, .0125 ); }
+.fill-dark-red { fill: #e7040f; }
+.fill-red { fill: #ff4136; }
+.fill-light-red { fill: #ff725c; }
+.fill-orange { fill: #ff6300; }
+.fill-gold { fill: #ffb700; }
+.fill-yellow { fill: #ffd700; }
+.fill-light-yellow { fill: #fbf1a9; }
+.fill-purple { fill: #5e2ca5; }
+.fill-light-purple { fill: #a463f2; }
+.fill-dark-pink { fill: #d5008f; }
+.fill-hot-pink { fill: #ff41b4; }
+.fill-pink { fill: #ff80cc; }
+.fill-light-pink { fill: #ffa3d7; }
+.fill-dark-green { fill: #137752; }
+.fill-green { fill: #19a974; }
+.fill-light-green { fill: #9eebcf; }
+.fill-navy { fill: #001b44; }
+.fill-dark-blue { fill: #00449e; }
+.fill-blue { fill: #357edd; }
+.fill-light-blue { fill: #96ccff; }
+.fill-lightest-blue { fill: #cdecff; }
+.fill-washed-blue { fill: #f6fffe; }
+.fill-washed-green { fill: #e8fdf5; }
+.fill-washed-yellow { fill: #fffceb; }
+.fill-washed-red { fill: #ffdfdf; }
+.fill-transparent { fill: transparent; }
 
 /*
   property: fill-opacity
-  supported values: 05-90
 */
 
-.fill-o-05 {}
-.fill-o-10 {}
-.fill-o-20 {}
-.fill-o-05 {}
-.fill-o-05 {}
-.fill-o-05 {}
-.fill-o-05 {}
-.fill-o-05 {}
-.fill-o-05 {}
+.fill-o-05 { fill-opacity: .05; }
+.fill-o-10 { fill-opacity: .10; }
+.fill-o-20 { fill-opacity: .20; }
+.fill-o-25 { fill-opacity: .25; }
+.fill-o-30 { fill-opacity: .30; }
+.fill-o-40 { fill-opacity: .40; }
+.fill-o-50 { fill-opacity: .50; }
+.fill-o-60 { fill-opacity: .60; }
+.fill-o-75 { fill-opacity: .75; }
+.fill-o-80 { fill-opacity: .80; }
+.fill-o-90 { fill-opacity: .90; }
 
+/*
+  property: stroke
+*/
+
+.stroke-none { stroke: none; }
 
 /*
   property: stroke-linejoin
-  supported values: arcs | bevel |miter | miter-clip | round
+  supported values: arcs | bevel | miter | miter-clip | round
 */
 
-/*
-property: stroke-linecap: butt | round | square */
+/* verbose syntax */
 
-.stroke-linejoin-butt {}
-.stroke-linejoin-round {}
-.stroke-linejoin-square {}
+.stroke-linejoin-arcs { stroke-linejoin: arcs; }
+.stroke-linejoin-bevel { stroke-linejoin: bevel; }
+.stroke-linejoin-miter { stroke-linejoin: miter; }
+.stroke-linejoin-miterclip { stroke-linejoin: miter-clip; }
+.stroke-linejoin-round { stroke-linejoin: round; }
+
+/* alt syntax */
+
+.stroke-lj-arcs { stroke-linejoin: arcs; }
+.stroke-lj-bevel { stroke-linejoin: bevel; }
+.stroke-lj-miter { stroke-linejoin: miter; }
+.stroke-lj-miterclip { stroke-linejoin: miter-clip; }
+.stroke-lj-round { stroke-linejoin: round; }
+
+/* alt syntax */
+
+.stroke-join-arcs { stroke-linejoin: arcs; }
+.stroke-join-bevel { stroke-linejoin: bevel; }
+.stroke-join-miter { stroke-linejoin: miter; }
+.stroke-join-miterclip { stroke-linejoin: miter-clip; }
+.stroke-join-round { stroke-linejoin: round; }
+
+/*
+  property: stroke-linecap
+  supported values: butt | round | square
+*/
+
+/* verbose syntax */
+
+.stroke-linecap-butt { stroke-linecap: butt; }
+.stroke-linecap-round { stroke-linecap: round; }
+.stroke-linecap-square { stroke-linecap: square; }
+
+/* alt syntax */
+
+.stroke-lc-butt { stroke-linecap: butt; }
+.stroke-lc-round { stroke-linecap: round; }
+.stroke-lc-square { stroke-linecap: square; }
+
+/* alt syntax */
+
+.stroke-cap-butt { stroke-linecap: butt; }
+.stroke-cap-round { stroke-linecap: round; }
+.stroke-cap-square { stroke-linecap: square; }
+
+
+/*
+  property: shape-rendering
+  supported values: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit
+*/
+
+.shape-render-auto { shape-rendering: auto; }
+.shape-render-inherit { shape-rendering: inherit; }
+.shape-render-optimize { shape-rendering: optimizeSpeed; }
+.shape-render-crisp { shape-rendering: crispEdges; }
+.shape-render-geo { shape-rendering: geometricPrecision; }
