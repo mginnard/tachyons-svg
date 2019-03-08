@@ -1,3 +1,7 @@
+## WIP Disclaimer
+
+This work is presented as an unsupported draft and work-in-progress.
+
 ## SVG CSS Classes
 
 - `stroke`
@@ -12,11 +16,3 @@
 - `fill-opacity`
 - `fill-opacity` on hover
 - `shape-rendering`
-
-## TODO
-
-- [ ] include a description for each section.
-- [ ] include the css property/properties for each section.
-- [ ] include the supported values (if applicable) for each section.
-- [ ] decide on the syntax for stroke-linejoin, stroke-linecap.
-- [ ] set up :root variables for spacing, colors.
